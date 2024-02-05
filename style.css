@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans',sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#009688 0% , #009688 130px , #d9dbd5 130px , #d9dbd5 100%)
+}
+.main{
+    position: relative;
+    width: 1396px;
+    max-width: 100%;
+    height: calc(100vh - 40px);
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,06),0 2px 5px 0 rgba(0,0,0,06);
+    display: flex;
+}
+.leftmenu{ 
+    position: relative;
+    flex: 30%;
+    background:#fff;
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+.rightmasseges{
+    position: relative;
+    flex: 70%;
+    background: #e5ddd5;
+    opacity: 0.9;
+
+
+}
+.rightmasseges::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(media/bg.jpg);
+
+}
+.header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+background: #ededed;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding :  15px;
+
+}
+.myimg{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow:hidden;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.n_icons{
+    display: flex;
+}
+.n_icons li{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: #51585c;
+    font-size: 1.5em;
+    margin-left: 20px;
+
+}
+.search{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #ebe8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 21px
+}
+.search div{
+    width: 100%;
+}
+.search div input{
+    width: 100%;
+    outline-color: #009688;
+    border: none;
+    background: #fff;
+    padding: 6px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+.search div input::placeholder{
+    color: #bbb;
+    position: absolute;
+    left:40px ;
+}
+.search div ion-icon{
+    position: absolute;
+    left: 30px;
+    top: 17px;
+    font-size: 1.2em;
+
+}
+
+.chatlist{
+    
+    position: relative;
+    height: calc( 100% - 110px );
+    overflow-y: auto;
+
+}
+
+.block{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 15px;
+    border-bottom: 3px solid rgb(0,0,0,0.06);
+    cursor: pointer;
+    background-color: #ffffff;
+
+}
+.chatlist .block:hover{
+    background:#f5f5f5 ;
+}
+.block.top{
+    background: #ebebeb;
+}
+.chatlist .block.top3 .details .time{
+    color: #0aad61;
+    font-weight: bold;
+}
+.chatlist .block.top4 .details .time{
+    color: #0aad61;
+    font-weight: bold;
+}
+.chatlist .block.top6 .details .time{
+    color: #0aad61;
+    font-weight: bold;
+}
+.chatlist .block.top7 .details .time{
+    color: #0aad61;
+    font-weight: bold;
+}
+
+
+
+.imgb{
+    position: relative;
+    width:45px ;
+    height:45px ;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    margin-right: 10px;
+}
+.details{
+    position: relative;
+    width: 100%;
+
+}
+.listhead{
+    display: flex;
+justify-content: space-between;
+margin-bottom: 5px;
+}
+.listhead h4{
+    font-size:1.1em ;
+    font-weight:600 ;
+    color: #111;
+}
+.time{
+    font-size: 0.75em;
+    color: #aaa;
+
+}
+.message_p{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.message_p p{
+    color: #aaa;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    font-size: 0.9em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.message_p b{
+    background-color: #0aad61;
+    color: #fff;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75em;
+}
+.imgtext{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.imgtext h4{
+    font-weight: 600;
+    line-height: 1.5em;
+    margin-left: 15px;
+}
+span{
+    font-size: 0.8em;
+}
+.chat{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 120px);
+    padding:50px ;
+    overflow-y: auto;
+}
+.msg{
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.msg p{
+    position: relative;
+    right: 0;
+    text-align: right;
+    max-width: 65%;
+    padding: 12px;
+    background: #c6f4a3;
+    border-radius: 10%;
+    font-size: 0.9em;
+}
+.my_chat{
+
+    justify-content: flex-end;
+}
+.frnd_chat p{
+    background: #ffffff;
+
+}
+.frnd_chat{
+    justify-content: flex-start;
+    text-align: left;
+}
+.chat_input{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #f0f0f0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.chat_input ion-icon{
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #51585c;
+}
+.chat_input ion-icon:nth-child(1){
+    margin-right: 15px;
+}
+.chat_input input{
+    position: relative;
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1em;
+}
+@media screen and (min-width: 500px) {
+    .leftmenu{
+      width: 100%;
+    }}
+    @media screen and (min-width: 500px) {
+        .rightmasseges{
+          
+          width: 0;
+        }}
+    @media screen and (min-width: 800px) {
+        .leftmenu{
+          width: 50%;}}
+          @media screen and (min-width: 800px) {
+            .rightmasseges{
+              width: 0%;}}
